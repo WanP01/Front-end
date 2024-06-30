@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 后代选择器 */
+        /* div span {
+            color: red;
+        } */
+        /* 子代选择器 */
+        /* div>span {
+            color: red;
+        } */
+        /* 并集选择器 */
+        /* div,
+        span {
+            color: red;
+        } */
+        /* 交集选择器 */
+        p.box {
+            color: red;
+        }
+
+        /* 伪类选择器 */
+        .box:hover {
+            color: blue;
+        }
+
+        a:link {
+            color: red;
+        }
+
+        a:visited {
+            color: green;
+        }
+
+        a:hover {
+            color: blue;
+        }
+
+        a:active {
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <span>单独的span</span>
+    <div>
+        <span> div里面的 span </span>
+        <p>
+            <span> div 里面的 p 里面的 span</span>
+        </p>
+    </div>
+    <p class="box">P 标签</p>
+    <a href="#">超链接</a>
+
+</body>
+
+</html>

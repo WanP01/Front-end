@@ -1,0 +1,35 @@
+/* css code */
+p {
+    color: red;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    /* 多个字体 从左到右 找到哪个生效哪个，可以设置 san-serif作为默认 */
+
+    font: italic 700 30px/2 楷体;
+    /* 文字倾斜 文字加粗 字体大小/行高 字体格式  大小和行高必填*/
+
+    text-indent: 2em;
+    text-align: center;
+    text-decoration: underline;
+
+}
+
+.black {
+    color: black;
+
+}
+
+.large {
+    font-size: 50px;
+}
+
+#blue {
+    color: blue;
+}
+
+* {
+    color: olive;
+}
