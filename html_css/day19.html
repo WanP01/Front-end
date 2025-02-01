@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+    <style>
+        /* 如果要调整字体大小，注意选择器优先级 */
+        .icon-icon-test3 {
+            font-size: 50px;
+            color: orange;
+        }
+
+        div {
+            border: 1px solid #000;
+
+        }
+
+        .t2 img {
+            vertical-align: middle;
+        }
+
+        .t3 img {
+            vertical-align: top;
+        }
+
+        .t4 img {
+            vertical-align: bottom;
+        }
+
+        .tran {
+            width: 200px;
+            height: 150px;
+            transition: all 1s;
+        }
+
+        .tran:hover {
+            width: 500px;
+            height: 400px;
+
+        }
+
+        .op {
+            width: 500px;
+            height: 500px;
+            background-color: orange;
+            /* opacity: 0; */
+            /* opacity: 1; */
+            opacity: 0.5;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<!-- 浏览器默认将行内块，行内当作文字处理，默认按照文字基线处理，效果是图片下端会有留白，转块级就会消失 -->
+
+<body>
+    <div class="t1">
+        <img src="./images/1.webp" alt="">
+        <span class="iconfont icon-icon-test3">fsdnklvlfdlk</span>
+    </div>
+    <div class="t2">
+        <img src="./images/1.webp" alt="">
+        <span class="iconfont icon-icon-test3">fsdnklvlfdlk</span>
+    </div>
+    <div class="t3">
+        <img src="./images/1.webp" alt="">
+        <span class="iconfont icon-icon-test3">fsdnklvlfdlk</span>
+    </div>
+    <div class="t4">
+        <img src="./images/1.webp" alt="">
+        <span class="iconfont icon-icon-test3">fsdnklvlfdlk</span>
+    </div>
+    <img src="./images/huawei.jpg" alt="" class="tran">
+    <div class="op">
+        <img src="./images/phone.png" alt="">
+    </div>
+</body>
+
+</html>

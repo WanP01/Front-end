@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+        } */
+
+        /* 默认 index 是0，越大越在上面显示 */
+        /* .box1 {
+            background-color: pink;
+            z-index: 1;
+        } */
+
+        /* .box2 {
+            background-color: blue;
+            left: 100px;
+            top: 100px;
+        } */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        div {
+            width: 112px;
+            height: 110px;
+            background-color: pink;
+            background-image: url(./images/abcd.jpg);
+            background-position: -256px -276px;
+        }
+
+        .service {
+            width: 1190px;
+            height: 42px;
+            background-color: pink;
+            margin: 100px auto;
+        }
+
+        .service li {
+            display: flex;
+            padding-left: 40px;
+            width: 297px;
+            height: 42px;
+            background-color: skyblue;
+        }
+
+        .service ul {
+            display: flex;
+        }
+
+        .service li h5 {
+            width: 36px;
+            height: 42px;
+            /* background-color: #fff; */
+            background: url(./images/sprite.png) 0 -192px;
+        }
+
+        .service li:nth-child(2) h5 {
+            background-position: -41px -192px;
+        }
+
+        .service li:nth-child(2) h5 {
+            background-position: -41px -192px;
+        }
+
+        .service li:nth-child(3) h5 {
+            background-position: -82px -192px;
+        }
+
+        .service li:nth-child(4) h5 {
+            background-position: -123px -192px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="box1"></div>
+    <div class="box2"></div> -->
+
+    <div class="csssprite"></div>
+
+    <div class="service">
+        <ul>
+            <li>
+                <h5></h5>
+                <span>text</span>
+            </li>
+            <li>
+                <h5></h5>
+                <span>text</span>
+            </li>
+            <li>
+                <h5></h5>
+                <span>text</span>
+            </li>
+            <li>
+                <h5></h5>
+                <span>text</span>
+            </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
