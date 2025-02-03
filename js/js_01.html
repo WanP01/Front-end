@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="test"></div>
+  <p id="nav">nav</p>
+  <p class="yun">yun</p>
+  <ul>
+    <li>cesho1</li>
+    <li>cesho2</li>
+    <li>cesho3</li>
+  </ul>
+  <!-- <script src="./js_file/my.js"> </script> -->
+  <script>
+    // alert("你好，js~") 外部js 的内容会忽略内部的js
+    //单行注释
+    /*
+    多行注释
+    */
+    //  js结束符（建议统一，都不加）
+    // 1. 文档输出
+    document.write('我是div标签')
+    document.write('<h1>我是一级标题</h1>')
+    // 2.控制台打印输出
+    console.log('控制台打印日志')
+    //3. 输入
+    // prompt('请输入你的年龄')
+    // 正常按照 HTML 文档流的顺序，但 alert 和 prompt 会跳过渲染提前执行
+    //变量
+    let age
+    age = 18
+    let kim = 9, name = 'kim'
+    // let uname = prompt('输入姓名')
+    // console.log(uname)
+    const test = 1
+    let arry = [1, 'cershi']
+    console.log(arry[1])
+    console.log(arry[0])
+
+    //+ 先看有没有字符串 和 其他变量，有的话按照 字符串拼接逻辑走
+    // + 如果作为 正好，放在变量的前面且 + 前面没有其他对象，按照数字处理变量
+    // - * / 等一律按照数字处理相关变量
+
+    console.log(11 + 11)
+    console.log("11" + 11)
+    console.log(11 - 11)
+    console.log("11" - 11)
+    console.log('1' * 1)
+    console.log(typeof '123')
+    console.log(typeof + "124")
+    console.log(+"11" + 11)
+
+    let str = "123"
+    console.log(Number(str))
+    console.log(parseInt('12.34adc'))
+    console.log(parseInt('acg12.34'))
+    console.log(parseFloat('12.34Abdc'))
+    console.log(parseFloat('acg12.34'))
+
+    let i = 1
+    console.log(i++ + 1)
+    let j = 1
+    console.log(++j + 1)
+
+    console.log(2 == "2")
+    console.log(2 === "2")
+    console.log(null === null)
+    console.log(undefined === undefined)
+    console.log(NaN === NaN)
+
+    console.log(3 > 5 ? 3 : 5)
+    let num = 1
+    console.log(num < 10 ? 0 + String(num) : String(num))
+    if (num > 1) {
+      console.log('if 1')
+    } else if (num > 10) {
+      console.log('else if 2')
+    } else {
+      console.log('else 3')
+    }
+
+    switch (num) {
+      case 2:
+        console.log('case 1')
+      // break
+      case 1:
+        console.log('case 2')
+      // break
+      case 3:
+        console.log('case 3')
+      // break
+      default:
+        console.log('case default')
+    }
+
+    let nWhile = 1
+    while (nWhile < 5) {
+      console.log('test while 5')
+      nWhile++
+    }
+
+    for (let nFor = 1; nFor < 5; nFor++) {
+      console.log('test for 5')
+    }
+
+    let arr1 = [1, 2, 3, 4]
+    let arr2 = new Array(1, 2, 3, 4)
+    console.log(arr1.length)
+    console.log(arr1.push("5"))
+    console.log(arr1.unshift('6'))
+    console.log(arr1)
+
+    console.log(arr1.pop())
+    console.log(arr1.shift())
+    console.log(arr1.splice(1, 1))
+    console.log(arr1)
+
+    function printArray(arr = []) {
+      console.log('_______________')
+      for (let i = 0; i < arr.length; i++) {
+        console.log(arr[i])
+      }
+      console.log('_______________')
+      return [arr1, 20]
+    }
+
+    printArray()
+    printArray(arr1)
+    console.log(printArray())
+    let funx1 = function () {
+      console.log('匿名函数')
+    }
+    funx1();
+
+    (function () {
+      console.log('立即执行')
+    })();
+
+
+    (function () {
+      console.log('立即执行2')
+    }());
+
+    console.log(null == undefined)
+    console.log(null === undefined)
+    console.log(undefined == 0)
+    console.log(null == 0)
+    console.log(Number(null) == 0)
+
+    let ob1 = {
+      uname: 'xxx',
+      age: 18,
+      "test-1": 'test',
+      funxob: function () {
+        console.log('ob1 function 1')
+      }
+    }
+
+    ob1.age
+    ob1["test-1"]
+    ob1.Add1 = 'add'
+    delete ob1.uname
+
+    console.log(ob1.funxob())
+
+    console.log(ob1)
+
+
+    for (let k in ob1) {
+      console.log(k)
+      console.log(ob1[k])
+    }
+
+    console.log("end")
+
+    let dom1 = document.querySelector('p#nav')
+    console.log(dom1)
+    console.dir(dom1)
+
+  </script>
+  <!-- //内联（行内js） -->
+  <button onclick="alert('确定了？')"></button>
+</body>
+
+</html>
